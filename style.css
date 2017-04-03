@@ -1,0 +1,57 @@
+body {
+  height: 100%;
+  background-color: #333;
+  background-image: url('http://s1.1zoom.me/big3/894/Moon_Black_background_496528.jpg');
+  background-size: cover;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+p {
+  line-height: 1.3;
+  margin: 10px auto;
+}
+h1,
+h4 {
+  text-align: center;
+  margin: 5px 0;
+}
+h6 {
+  font-size: 30px;
+  margin: 5px 0;
+}
+main {
+  max-width: 780px;
+  margin: auto;
+}
+section {
+  margin-bottom: 20px;
+}
+@keyframes bounce {
+  0% {
+    left: -100px;
+  }
+  20% {
+    left: 100px;
+  }
+  40% {
+    left: -50px;
+  }
+  60% {
+    left: 50px;
+  }
+  80% {
+    left: -30px;
+  }
+  100% {
+    left: 0;
+  }
+}
+.name {
+  position: relative;
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
