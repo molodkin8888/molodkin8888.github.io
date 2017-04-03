@@ -30,28 +30,87 @@ section {
 }
 @keyframes bounce {
   0% {
-    left: -100px;
+    transform: scaleY(2);
+  }
+  10% {
+    transform: scaleY(0.1);
   }
   20% {
-    left: 100px;
+    transform: scaleY(1.5);
+  }
+  30% {
+    transform: scaleY(0.6);
   }
   40% {
-    left: -50px;
+    transform: scaleY(1.2);
   }
-  60% {
-    left: 50px;
-  }
-  80% {
-    left: -30px;
-  }
+  50%,
   100% {
-    left: 0;
+    transform: scaleY(1);
   }
 }
 .name {
+  transform-origin: center bottom;
   position: relative;
   animation-name: bounce;
-  animation-duration: 0.5s;
+  animation-duration: 8s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+@keyframes works {
+   0% {
+    right: -100px;
+    }
+  10% {
+    right: 100px;
+    }
+  20% {
+    right: -50px;
+    }
+  30% {
+    right: 50px;
+    }
+  40% {
+    right: -30px;
+    }
+  50%,
+  100% {
+    right: 0;
+    }
+}
+.work{
+  position: relative;
+  animation-name: works;
+  animation-duration: 8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+.creature{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #3ac;
+  position: relative;
+}
+.creature::before, 
+.creature::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000;
+  top: 40px;
+  }
+.creature::after { right: 35px; }
+.creature::before { left: 35px; 
+  animation: eye 3s ease-in-out infinite;}
+@keyframes eye {
+  80% {transform: none;}
+  85% {transform: scaleY(0.2);}
+  90% {transform: none;}
+  95% {transform: scaleY(0.2);}
 }
