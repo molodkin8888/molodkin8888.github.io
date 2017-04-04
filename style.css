@@ -103,7 +103,7 @@ section {
   height: 30px;
   border-radius: 50%;
   background: #000;
-  top: 40px;
+  top: 30px;
   }
 .creature::after { right: 35px; }
 .creature::before { left: 35px; 
