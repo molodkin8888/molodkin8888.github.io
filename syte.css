@@ -167,15 +167,15 @@ hr {
 
 .contact {
 	background: #EEEFF0;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	text-align: center;
 
 
 }
 
 .contact p {
-	font-size: 80px;
+	font-size: 60px;
 	color: #333;
 	font-family: "Lato";
 	text-align: center;
