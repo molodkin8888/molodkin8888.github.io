@@ -30,7 +30,7 @@ p {
 	font-size: 26px;
 }
 a {
-	color: #f85c37;
+	color: #333;
 }
 
 a:hover, a:focus {
@@ -163,6 +163,60 @@ hr {
 #r p {
 	color: #333;
 	font-size: 30px;
+}
+
+.contact {
+	background: #EEEFF0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+
+
+}
+
+.contact p {
+	font-size: 80px;
+	color: #333;
+	font-family: "Lato";
+	text-align: center;
+}
+
+.placeContact {
+	background: white;
+	width: 100%;
+	text-align: center;
+	height: 700px;
+	font-family: "Lato";
+	color: #333;
+}
+
+.placeContact p {
+	font-size: 35px;
+	color: #333;
+	text-decoration: none;
+	font-family: "Raleway";
+	font-weight: bold;
+	font-style: normal;
+
+}
+
+.placeContact img {
+	font-size: 45px;
+}
+
+#footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 120px;
+	width: 100%;
+	background: black;
+}
+
+#footer h1 {
+	text-align: center;
+	color: white;
+
 }
 /*
 #f {
