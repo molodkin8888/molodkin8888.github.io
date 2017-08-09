@@ -165,50 +165,12 @@ hr {
 	font-size: 30px;
 }
 
-.contact {
-	background: #EEEFF0;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	text-align: center;
-
-
-}
-
-.contact p {
-	font-size: 60px;
-	color: #333;
-	font-family: "Lato";
-	text-align: center;
-}
-
-.placeContact {
-	background: white;
-	width: 100%;
-	text-align: center;
-	height: 700px;
-	font-family: "Lato";
-	color: #333;
-}
-
-.placeContact p {
-	font-size: 35px;
-	color: #333;
-	text-decoration: none;
-	font-family: "Raleway";
-	font-weight: bold;
-	font-style: normal;
-
-}
-
-.placeContact img {
-	font-size: 45px;
-}
 
 #footer {
 	position: fixed;
 	left: 0;
 	bottom: 0;
-	height: 120px;
+	height: 60px;
 	width: 100%;
 	background: black;
 }
@@ -216,8 +178,33 @@ hr {
 #footer h1 {
 	text-align: center;
 	color: white;
+	font-size: 18px;
 
 }
+
+.myContact p {
+text-align: center;
+font-size: 40px;
+color: #544747;
+font-style: verdana;
+}
+
+#EmailContact h3 {
+	font-family: serif;
+	font-size: 20px;
+	color: #544747;
+	padding-top: 65px;
+	padding-left: 20px;
+
+}
+
+#Maps  {
+
+	padding-left: 680px;
+	padding-bottom: 80px;
+}
+
+
 /*
 #f {
 
