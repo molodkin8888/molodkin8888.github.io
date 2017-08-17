@@ -204,7 +204,21 @@ font-style: verdana;
 	padding-bottom: 80px;
 }
 
+.story p{
+	font-family: times;
+	color: black;
+	font-size: 20px;
+	margin-left: 20px;	 
+}
 
+#back p {
+	margin-bottom: 0px;
+	font-family: fantasy;
+	font-size: 20px;
+	text-align: center;
+
+
+}
 /*
 #f {
 
