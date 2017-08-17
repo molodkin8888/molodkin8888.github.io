@@ -215,7 +215,11 @@ font-style: verdana;
 	margin-bottom: 0px;
 	font-family: times;
 	font-size: 20px;
-	text-align: center;
+	text-align: left;
+}
+#back {
+	padding-left: 40px;
+	padding-top: 180px;	
 }
 /*
 #f {
