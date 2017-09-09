@@ -1,0 +1,303 @@
+body {
+	background-color: #f2f2f2;
+	font-family: "Lato";
+	font-weight: 100;
+	font-size: 26px;
+	color: #555;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+	margin-top: 0px;
+
+}
+
+.container {
+	width: 100%;
+	margin: 20px auto 50px;
+	padding: 0 0 0;
+
+}
+
+.container-scroll {
+ 	background: green;
+ 	max-width: 1000px;
+ 	position: relative;
+ 	margin: auto;
+}
+
+.container-inf {
+	background: #FAF5F5;
+	margin-top: 45px;
+	padding-top: 40px;
+	text-align: center;
+	min-height: 300px;
+	width: 100%;
+}
+
+.container-inf p {
+font-size: 40px;
+font-family: verdana;
+
+}
+
+.container-inf li{
+font-size: 30px;
+text-align: left;
+color: black;
+
+}
+
+
+.buttons {
+	background: yellow;
+}
+
+.plus {
+	background: #f2f2f2;
+	padding-top: 35px;
+	margin-bottom: 45px;
+	min-height: 200px; 
+}
+
+.plus h3{
+	font-size: 65px;
+	text-align: center;
+	font-family: serif;
+}
+
+.plus p{
+	font-size: 25px;
+	font-family: sans-serif;
+}
+
+@-webkit-keyframes fade {
+	from{opacity: 4;}
+	to{opacity: 1}
+}
+
+@keyframes fade{
+	from{opacity: .4}
+	to{opacity: 1}
+}
+
+.navbar-inverse .navbar-brand {
+	color: #999;
+	font-weight: bolder;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+.centered {
+	text-align: center;
+	font-size: 22px;
+}
+
+.button {
+	margin: 8px;
+}
+
+
+#headerwrap {
+	background: url(https://c.pxhere.com/photos/3a/17/asphalt_aspiration_clouds_cloudy_endless_forward_freedom_HD_wallpaper-912050.jpg!d) no-repeat center top;
+	margin-top: -10px;
+	padding-top: 20px;
+	text-align: center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 600px;
+	width: 100%;
+	padding: 0 0;
+
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#headerwrap p{
+	text-align: center;
+	font-size: 100px;
+	color: #0A385C;
+}
+
+.slider {
+ z-index: 9;
+ width: 100%
+ height: 290px;
+ overflow: hidden;
+ margin: 0 0 7px;
+ position: relative;
+ }
+
+ .slider ul,
+ .slider li {
+ padding: 0;
+ margin: 0;
+ list-style-type: none;
+ }
+ .slider ul {
+ width: 9999px; 
+ }
+ .slider ul li {
+ list-style-type: none;
+ float: left;
+ width: 700px;
+ height: 290px;
+ }
+ .slider .nav {
+ position: absolute;
+ left: 15px;
+ bottom: 12px; 
+ }
+ .slider .nav span {
+ opacity: 0.9;
+ background: #fff;
+ margin: 0 8px 0 0;
+ width: 16px;
+ height: 16px;
+ border-radius: 8px;
+ cursor: pointer;
+ overflow: hidden;
+ display: block;
+ float: left;
+ box-shadow: 0 1px 2px #000;
+ }
+ .slider .nav span.on {
+ background: #2e9419;
+ }
+
+ .nav {
+	margin: 20px 0;
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+.nav li {
+	margin: 0 5px 10px 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	*display:inline; /* ie7 */
+}
+.nav a {
+	padding: 3px 12px;
+	text-decoration: none;
+	color: #999;
+	line-height: 100%;
+}
+
+.nav p{
+	font-size: 25px;
+	color: #DADEE2;
+	text-decoration: none;
+	text-align: right;
+}
+.nav a:hover {
+	color: #000;
+}
+.nav .current a {
+	background: #999;
+	color: #fff;
+	border-radius: 3px;
+}
+
+.contact {
+	min-height: 600px;
+	width: 100%;
+	background:white;
+	padding-top: 45px;
+}
+
+.contact h3{
+	text-align: center;
+	font-size: 45px;
+	color: black;
+}
+
+.map {
+	width: 100%;
+}
+
+.map p{
+	font-size: 30px;
+	color: black;
+	text-align: center;
+}
+
+.photo {
+	min-height: 300px;
+	background:white;
+	padding-left: 50px;
+	padding-top: 45px;
+}
+
+.photo p{
+	text-align: center;
+	font-size: 29px;
+	color:  black;
+}
+.round {
+	height: 150px;
+ -moz-border-radius: 150px; /* Firefox */
+ -webkit-border-radius: 150px; /* Safari, Chrome */
+ border-radius: 250px; /* CSS3 */
+ margin-left: 45px;
+padding: 0 0;
+}
+
+.footertrip {
+	background: #F1F2F3;
+	padding-bottom: 0px;
+	padding-top: 20px;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	height: 30px;
+	width: 100%;
+}
+
+  hr {
+    border: none; /* Убираем границу */
+    background-color: red; /* Цвет линии */
+    color: red; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+   }
+
+ .social-link li {
+list-style: none;
+display: inline-block;
+margin-right: 20px;
+font-size: 42px;
+}
+
+.social-link li a:hover {
+  color: #FFBF00 !important;
+
+}
+
+.developer {
+	min-height: 150px;
+	width: 100%;
+}
+
+.developer p{
+	font-size: 22px;
+	font-family: serif;
+	text-align: right;
+	padding-right: 26px;
+	color: black;
+}
+
+.developer a{
+	text-decoration: none;
+}
+
+.city {
+	width: 100%;
+}
+
+.city p{
+	text-align: center;
+	font-size: 16px;
+}
