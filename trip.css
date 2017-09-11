@@ -202,8 +202,8 @@ font-style: tahoma;
 .photo {
 	min-height: 300px;
 	background:white;
-	padding-left: 50px;
-	padding-top: 45px;
+	padding: 50px 45px 100px;
+	text-align: center;
 }
 
 .photo p{
@@ -212,12 +212,11 @@ font-style: tahoma;
 	color:  black;
 }
 .round {
+	width: 150px;
 	height: 150px;
- -moz-border-radius: 150px; /* Firefox */
- -webkit-border-radius: 150px; /* Safari, Chrome */
- border-radius: 250px; /* CSS3 */
- margin-left: 45px;
-padding: 0 0;
+	border-radius: 50%;
+	margin: 0 25px;
+	object-fit: cover;
 }
 
 .footertrip {
