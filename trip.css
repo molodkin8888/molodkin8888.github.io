@@ -35,7 +35,11 @@ body {
 
 .container-inf p {
 font-size: 40px;
-font-family: verdana;
+font-family: sans-serif;
+font-style: verdana;
+padding-left: 20px;
+padding-right: 20px;
+color: black;
 
 }
 
@@ -43,13 +47,11 @@ font-family: verdana;
 font-size: 30px;
 text-align: left;
 color: black;
+font-family: sans-serif;
+font-style: tahoma;
 
 }
 
-
-.buttons {
-	background: yellow;
-}
 
 .plus {
 	background: #f2f2f2;
@@ -59,14 +61,21 @@ color: black;
 }
 
 .plus h3{
-	font-size: 65px;
+	font-size: 55px;
 	text-align: center;
-	font-family: serif;
+	font-family: sans-serif;
+	font-style: tahoma;
+	color: black;
 }
 
 .plus p{
 	font-size: 25px;
 	font-family: sans-serif;
+	font-style: verdana;
+	text-align: justify;
+	padding-left: 20px;
+	padding-right: 20px;
+
 }
 
 @-webkit-keyframes fade {
@@ -91,9 +100,7 @@ color: black;
 	font-size: 22px;
 }
 
-.button {
-	margin: 8px;
-}
+
 
 
 #headerwrap {
@@ -120,51 +127,7 @@ color: black;
 	color: #0A385C;
 }
 
-.slider {
- z-index: 9;
- width: 100%
- height: 290px;
- overflow: hidden;
- margin: 0 0 7px;
- position: relative;
- }
 
- .slider ul,
- .slider li {
- padding: 0;
- margin: 0;
- list-style-type: none;
- }
- .slider ul {
- width: 9999px; 
- }
- .slider ul li {
- list-style-type: none;
- float: left;
- width: 700px;
- height: 290px;
- }
- .slider .nav {
- position: absolute;
- left: 15px;
- bottom: 12px; 
- }
- .slider .nav span {
- opacity: 0.9;
- background: #fff;
- margin: 0 8px 0 0;
- width: 16px;
- height: 16px;
- border-radius: 8px;
- cursor: pointer;
- overflow: hidden;
- display: block;
- float: left;
- box-shadow: 0 1px 2px #000;
- }
- .slider .nav span.on {
- background: #2e9419;
- }
 
  .nav {
 	margin: 20px 0;
@@ -192,6 +155,8 @@ color: black;
 	color: #DADEE2;
 	text-decoration: none;
 	text-align: right;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .nav a:hover {
 	color: #000;
@@ -213,6 +178,15 @@ color: black;
 	text-align: center;
 	font-size: 45px;
 	color: black;
+	font-family: sans-serif;
+	font-style: verdana;
+	text-decoration: bold;
+}
+
+.contact p{
+	font-family: sans-serif;
+	font-style: tahoma;
+	font-size: 22px;
 }
 
 .map {
@@ -255,6 +229,10 @@ padding: 0 0;
 	bottom: 0;
 	height: 30px;
 	width: 100%;
+}
+
+.footerstrip p{
+	font-family: serif;
 }
 
   hr {
@@ -300,4 +278,74 @@ font-size: 42px;
 .city p{
 	text-align: center;
 	font-size: 16px;
+}
+
+@media screen and (max-width: 1280px) { div.contentblock {width: 1200px;} } 
+@media screen and (max-width: 1140px) { div.contentblock {width: 1024px;} } 
+@media screen and (max-width: 992px) { div.contentblock {width: 970px;} } 
+
+img {   max-width: 100% }
+
+.header {   background: url(header.jpg) 50% no-repeat;   background-size: contain }
+
+
+
+#slides{
+    position: relative;
+    height: 300px;
+   	padding-left: 400px;
+    list-style-type: none;
+}
+
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+
+.showing {
+	opacity: 1;
+	z-index: 2;
+}
+
+	
+
+.controls{
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 20px 0px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  margin: 10px 0px 0px 10px;
+  width: 70px;
+}
+
+.controls:hover,
+.controls:focus{
+  background: #eee;
+  color: #333;
+}
+
+.container{
+  position: relative;
+}
+
+.buttons{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  background-color: none;
 }

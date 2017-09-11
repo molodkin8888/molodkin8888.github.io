@@ -1,25 +1,52 @@
-$(document).ready(function(){
-	$(".slider").each(function() {
-		var obj = $(this);
-	 $(obj).append("<div class='nav'></div>");
-  $(obj).find("li").each(function () {
-   $(obj).find(".nav").append("<span rel='"+$(this).index()+"'></span>"); // добавляем блок навигации
-   $(this).addClass("slider"+$(this).index());
-  });
-  $(obj).find("span").first().addClass("on"); // делаем активным первый элемент меню
- });
-});
-function sliderJS (obj, sl) { // slider function
- var ul = $(sl).find("ul"); // находим блок
- var bl = $(sl).find("li.slider"+obj); // находим любой из элементов блока
- var step = $(bl).width(); // ширина объекта
- $(ul).animate({marginLeft: "-"+step*obj}, 1000); // 500 это скорость перемотки
+var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,2000);
+
+function nextSlide() {
+ goToSlide(currentSlide+1);
 }
-$(document).on("click", ".slider .nav span", function() { // slider click navigate
- var sl = $(this).closest(".slider"); // находим, в каком блоке был клик
- $(sl).find("span").removeClass("on"); // убираем активный элемент
- $(this).addClass("on"); // делаем активным текущий
- var obj = $(this).attr("rel"); // узнаем его номер
- sliderJS(obj, sl); // слайдим
- return false;
-});
+
+function previousSlide() {
+ goToSlide(currentSlide-1);
+}
+
+function goToSlide(n) {
+ slides[currentSlide].className = 'slide';
+ currentSlide = (n+slides.length)%slides.length;
+ slides[currentSlide].className = 'slide showing';
+}
+var playing = true;
+var pauseButton = document.getElementById('pause');
+
+function pauseSlideshow() {
+ pauseButton.innerHTML = 'Play';
+ playing = false;
+ clearInterval(slideInterval);
+}
+
+function playSlideshow() {
+ pauseButton.innerHTML = 'Pause';
+ playing = true;
+ slideInterval = setInterval(nextSlide,2000);
+}
+
+pauseButton.onclick = function() {
+ if(playing) {
+ pauseSlideshow();
+  } else {
+ playSlideshow();
+  }
+};
+
+var next = document.getElementById('next');
+var previous = document.getElementById('previous');
+
+next.onclick = function() {
+ pauseSlideshow();
+ nextSlide();
+};
+previous.onclick = function() {
+ pauseSlideshow();
+ previousSlide();
+};
+
