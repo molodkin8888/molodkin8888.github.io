@@ -191,26 +191,29 @@ color: #544747;
 font-style: verdana;
 }
 
-#EmailContact h3 {
+#EmailContact p {
 	font-family: serif;
-	font-size: 20px;
+	font-size: 26px;
 	color: #544747;
-	padding-top: 65px;
+	padding-top: 35px;
 	padding-left: 20px;
 
 }
 
-#Maps  {
-
-	padding-left: 680px;
-	padding-bottom: 80px;
+#EmailContact a{
+	text-decoration: none;
+	color: black;
 }
 
+#EmailContact th {
+	font-size: 35px;
+}
 .story p{
-	font-family: times;
+	font-family: serif;
 	color: black;
 	font-size: 20px;
 	margin-left: 20px;	 
+	text-align: justify;
 }
 
 #back p {
@@ -222,6 +225,7 @@ font-style: verdana;
 #back {
 	padding-left: 40px;
 	padding-top: 180px;	
+	color: black;
 }
 
 .footerIndex {
