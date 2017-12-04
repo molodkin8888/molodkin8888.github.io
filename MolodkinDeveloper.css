@@ -1,0 +1,191 @@
+body{
+	background-color: #ececec;
+}
+
+div{
+	margin: 100px auto;
+	width: 920px;
+}
+
+h3, p{
+	font-family: "Open Sans";
+	text-align: center;
+	color: #333;
+}
+
+h3{
+	font-weight: 400;
+	font-size: 42px;
+}
+
+p{
+	font-size: 26px;
+	text-align: justify;
+}
+
+figure{
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+figure img{
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+figure figcaption{
+	padding: 2em;
+	color: #f5f5f5;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 160px;
+	left: 120px;
+	width: 100%;
+	height: 100%;
+}
+
+figure.molodkin-effect img{
+	transition: transform 0.35s;
+}
+
+figure.molodkin-effect .rounded{
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+}
+
+figure.molodkin-effect .social-link{
+	margin-top: 80px;
+	margin-left: 4%;
+	position: relative;
+}
+
+figure.molodkin-effect i{
+	margin-left: 15%;
+	transition: opacity 0.35s;
+	background-color: #f5f5f5;
+	color: #266ae0;
+	padding: 20px 20px;
+	text-transform: none;
+	font-size: 1.4em;
+	opacity: 0;
+}
+
+figure.molodkin-effect .fa-linkedin-square.rounded{
+	width: 23px;
+}
+
+figure.molodkin-effect .fa-linkedin-square{
+	position: absolute;
+	padding-left: 13px;
+	margin-top: 35px;
+	margin-left: 16%;
+	transform: translate(40px -20px);
+	transition: transform 0.3s, opacity 0.3s;
+	opacity: 0;
+}
+
+figure.molodkin-effect:hover .fa-linkedin-square{
+	transition: transform 0.35s, opacity 1.5s;
+	transition-delay: 0.35s;
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+
+figure.molodkin-effect .fa-envelope{
+	transform: translate(0px, -200px);
+	transition: transform 0.3s, opacity 0.3s;
+	margin-left: 36%;
+	margin-top: 0px;
+	opacity: 0;
+}
+
+figure.molodkin-effect:hover .fa-envelope{
+	transition: transform 0.35s, opacity 1.5s;
+	transition-delay: 0.35s;
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+
+figure.molodkin-effect:hover img{
+	opacity: 0.55;
+}
+
+.about-me{
+	width: 680px;
+	margin-top: 0px;
+	background-color: whitesmoke;
+	padding: 20px;
+}
+.under-container{
+	display: block;
+	width: 100%;
+	height: 250px;
+	background-color: #f4f6f7;
+}
+
+.container{
+	padding-top: 80px;
+	display: block;
+	width: 100%;
+	height: 300px;
+	background-color: white;
+}
+
+
+/*link*/
+
+.links{
+	padding-top: 40px;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	transform: translateY(-50%);
+
+}
+
+.links .link{
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	width: 250px;
+	height: 150px;
+	border-radius: 50%;
+	border: 2px black;
+	background-clip: content-box;
+	padding: 30px;
+	transition: .5s;
+	color: black;
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 120px;
+}
+
+.links .link span{
+	display: block;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.links .link:hover{
+	padding: 20px;
+	color: #8c836b;
+	margin-left: -5px;
+	transform: translateX(10px)
+	rotate(360deg);
+}
+
+.links p{
+	text-align: center;
+	font-size: 26px;
+	font-style: sans-serif;
+}
