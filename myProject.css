@@ -1,0 +1,95 @@
+body{
+	margin: 0;
+	padding: 0;
+	font: 1em/1.4em sans-serif;
+	background: url(http://kerriedorman.com/wp-content/uploads/2014/07/free-office-wallpaper-26001-26685-hd-wallpapers.jpg);
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+
+}
+
+h2{
+	text-align: center;
+	font-size: 60px;
+	color: #f3f4ed;
+	margin-top: 60px;
+}
+
+h3{
+	text-align: center;
+	color: #e2e0e0;
+	font-size: 22px;
+}
+
+
+.block{
+	width: 300px;
+	margin-top: 100px;
+	margin-left: 120px;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	float: left;
+
+}
+
+.circle{
+	background: #d5e8e1;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	color: #69c6a6;
+	line-height: 200px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 1.1em;
+	text-shadow: 1px 1px 1px #e8f2ef;
+	position: relative;
+}
+
+.circle span{
+	position: relative;
+	z-index: 2;
+}
+
+.circle a{
+	font-size: 22px;
+	text-decoration: none;
+}
+
+.circle::after{
+	content: '';
+	width: 200px;
+	height: 200px;
+	background: #77c699;
+	display: block;
+	border-radius: 50%;
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	z-index: 1;
+	transition: 0.5s width, 0.5s height, 0.5s top, 0.5s left;
+}
+
+.circle:hover::after{
+	width: 0;
+	height: 0;
+	left: 100px;
+	top: 100px;
+	box-shadow: 0 0 20px 20px #d8d4d4 inset;
+}
+
+.text{
+	color: #555;
+	font-size: 0.85em;
+	text-align: justify;
+}
+
+.text p{
+	font-size: 20px;
+	color: #f7f4f4;
+}
+
+
