@@ -1,0 +1,38 @@
+body{
+	padding: 0;
+	margin: 0;
+	background: url(http://st.gde-fon.com/wallpapers_original/591837_fuji-x100s_kamera_fon_2560x1440_www.Gde-Fon.com.jpg)no-repeat;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}
+
+header h2{
+	text-align: center;
+	padding: 20px;
+	font-size: 30px;
+	font-family: 'Verdana', sans-serif;
+	font-style: bold;
+}
+
+.variantsContact{
+	width: 440px;
+	height: auto;
+	float: left;
+	margin-left: 80px;
+	margin-top: 60px;
+}
+
+.variantsContact h3{
+	text-align: center;
+	font-size: 26px;
+}
+
+.variantsContact a{
+	display: block;
+	text-align: center;
+	font-size: 26px;
+	text-decoration: none;
+	color: #000;
+}
