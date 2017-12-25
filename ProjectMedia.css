@@ -138,3 +138,65 @@
 	
 }
 
+@media screen and (max-width: 1280px){
+	h2 { 
+		width: 800px; 
+		font-size: 26px;
+		text-align: center;
+		padding: 20px;
+	}
+	
+	h3{ width: 800px; 
+		font-size: 26px;
+		text-align: center;
+
+	}
+	p{ 	width: 800px; 
+		font-size: 24px;
+		text-align: justify;
+		padding: 5px;
+
+	}
+
+	div.block {
+		width: 740px;
+		margin-top: 30px;
+		margin-left: 30px;
+		padding: 15px;
+		border: 1px solid #ddd;
+		border-radius: 10px;
+		float: middle;
+	}
+	div.circle {  
+		width: 260px;
+		height: 260px;
+		margin: 0 auto;
+		color: #69c6a6;
+		line-height: 260px;
+		text-align: center;
+		border-radius: 50%;
+		font-size: 1.1em;
+		text-shadow: 1px 1px 1px #e8f2ef;
+		position: relative;
+
+	}
+
+	div.circle::after{
+		content: '';
+		width: 260px;
+		height: 260px;
+		background: #77c699;
+		display: block;
+		border-radius: 50%;
+		position: absolute;
+		top: -1px;
+		left: -1px;
+		z-index: 1;
+		transition: 0.5s width, 0.5s height, 0.5s top, 0.5s left;
+}
+
+	div.text { width: 240px; 
+		font-size: 0.80em;
+	}
+	
+}
