@@ -1,30 +1,35 @@
-$(document).ready(function(){
-	$('.next').click(function(){
-		var currentImage = $('img.current');
-		var currentImageIndex = $('.img.current').index();
-		var nextImageIndex = currentImageIndex + 1;
-		var nextImage = $('.img').eq(nextImageIndex);
-		currentImage.fadeOut(1000);
-		currentImage.removeClass('current');
+var slideIndex = 1;
+showSlides(slideIndex);
 
-		if(nextImageIndex == ($('.img:last').index()+1)){
-		$('.img').eq(0).fadeIn(1000);
-		$('.img').eq(0).addClass('current');
+function plusSlides(n){
+	showSlides(slideIndex += n);
+}
+
+function currentSlide(n){
+	showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+	var i;
+	var slides = document.getElementsByClassName("Slides");
+	var dots = document.getElementsByClassName("dot");
+
+	if(n > slides.length){
+		slideIndex = 1;
 	}
-	else{
-		nextImage.fadeIn(1000);
-		nextImage.addClass('current');
-		}
-	});
 
-	$('.prev').click(function(){
-		var currentImage = $('.img.current');
-		var currentImageIndex = $('.img.current').index();
-		var prevImageIndex = currentImageIndex - 1;
-		var prevImage = $('.img').eq(prevImageIndex);
+	if(n < 1){
+		slideIndex = slides.length;
+	}
 
-		currentImage.fadeOut(1000);
-		currentImage.removeClass('current');
-		currentImage.fadeIn(1000);
-		prevImage.addClass('current');
-});
+	for(i=0; i<slides.length; i++){
+		slides[i].style.display = "none";
+	}
+
+	for(i=0; i<dots.length; i++){
+		dots[i].className = dots[i].className.replace("active", "");
+	}
+	slides[slideIndex-1].style.display = "block";
+	dots[slideIndex-1].className+= " active";
+}
+

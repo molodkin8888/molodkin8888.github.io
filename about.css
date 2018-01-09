@@ -57,7 +57,7 @@ body{
 	text-align: justify;
 }
 
-#myLocation p{
+.Games p{
 	font-size: 20px;
 	text-align: justify;
 }
@@ -70,7 +70,7 @@ body{
 	background: #DDDAAA;
 }
 
-#myLocation{
+.Games{
 	width: 220px;
 	height: 222px;
 	float: left;
