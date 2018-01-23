@@ -1,25 +1,25 @@
-@media screen and (max-width: 880px){
+@media screen and (max-width: 1440px){
 	
-	h2 { width: 700px; 
-		font-size: 22px;
+	h2 { width: 1440px; 
+		font-size: 30px;
 		text-align: center;
-		padding: 20px;
+		padding: 25px;
 	}
 	
-	h3{ width: 700px; 
-		font-size: 16px;
+	h3{ width: 300px; 
+		font-size: 24px;
 		text-align: center;
 
 	}
-	p{ 	width: 700px; 
-		font-size: 20px;
+	p{ 	width: 280px; 
+		font-size: 25px;
 		text-align: justify;
 		padding: 5px;
 
 	}
 
 	div.block {
-		width: 724px;
+		width: 300px;
 		margin-top: 30px;
 		margin-left: 30px;
 		padding: 15px;
@@ -28,11 +28,11 @@
 		float: middle;
 	}
 	div.circle {  
-		width: 240px;
-		height: 240px;
+		width: 200px;
+		height: 200px;
 		margin: 0 auto;
 		color: #69c6a6;
-		line-height: 240px;
+		line-height: 200px;
 		text-align: center;
 		border-radius: 50%;
 		font-size: 1.1em;
@@ -43,8 +43,8 @@
 
 	div.circle::after{
 		content: '';
-		width: 240px;
-		height: 240px;
+		width: 200px;
+		height: 200px;
 		background: #77c699;
 		display: block;
 		border-radius: 50%;
@@ -61,11 +61,140 @@
 	
 }
 
-@media screen and (max-width: 480px){
+
+@media screen and (max-width: 1120px){
+	
+	h2 { width: 1120px; 
+		font-size: 28px;
+		text-align: center;
+		padding: 20px;
+	}
+	
+	h3{ width: 240px; 
+		font-size: 22px;
+		text-align: center;
+
+	}
+	p{ 	width: 240px; 
+		font-size: 22px;
+		text-align: justify;
+		padding: 5px;
+
+	}
+
+	div.block {
+		width: 260px;
+		margin-top: 30px;
+		margin-left: 30px;
+		padding: 15px;
+		border: 1px solid #ddd;
+		border-radius: 10px;
+		float: middle;
+	}
+	div.circle {  
+		width: 180px;
+		height: 180px;
+		margin: 0 auto;
+		color: #69c6a6;
+		line-height: 180px;
+		text-align: center;
+		border-radius: 50%;
+		font-size: 1.1em;
+		text-shadow: 1px 1px 1px #e8f2ef;
+		position: relative;
+
+	}
+
+	div.circle::after{
+		content: '';
+		width: 180px;
+		height: 180px;
+		background: #77c699;
+		display: block;
+		border-radius: 50%;
+		position: absolute;
+		top: -1px;
+		left: -1px;
+		z-index: 1;
+		transition: 0.5s width, 0.5s height, 0.5s top, 0.5s left;
+}
+
+	div.text { width: 200px; 
+		font-size: 0.80em;
+	}
+	
+}
+
+
+@media screen and (max-width: 997px){
+	
+	h2 { width: 997px; 
+		font-size: 20px;
+		text-align: center;
+		padding: 20px;
+	}
+	
+	h3{ width: 220px; 
+		font-size: 18px;
+		text-align: center;
+
+	}
+	p{ 	width: 200px; 
+		font-size: 14px;
+		text-align: justify;
+		padding: 5px;
+
+	}
+
+	div.block {
+		width: 220px;
+		margin-top: 30px;
+		margin-left: 15px;
+		padding: 10px;
+		border: 1px solid #ddd;
+		border-radius: 10px;
+		float: middle;
+	}
+	div.circle {  
+		width: 120px;
+		height: 120px;
+		margin: 0 auto;
+		color: #69c6a6;
+		line-height: 120px;
+		text-align: center;
+		border-radius: 50%;
+		font-size: 1.1em;
+		text-shadow: 1px 1px 1px #e8f2ef;
+		position: relative;
+
+	}
+
+	div.circle::after{
+		content: '';
+		width: 120px;
+		height: 120px;
+		background: #77c699;
+		display: block;
+		border-radius: 50%;
+		position: absolute;
+		top: -1px;
+		left: -1px;
+		z-index: 1;
+		transition: 0.5s width, 0.5s height, 0.5s top, 0.5s left;
+}
+
+	div.text { width: 180px; 
+		font-size: 0.80em;
+	}
+	
+}
+
+
+@media screen and (max-width: 792px){
 
 	h2 { 
 		width: 295px; 
-		font-size: 12px;
+		font-size: 18px;
 		text-align: center;
 		padding: 12px;
 	}
@@ -86,9 +215,9 @@
 	}
 
 	div.block {
-		width: 250px;
+		width: 290px;
 		margin-top: 30px;
-		margin-left: 30px;
+		margin-left: 20px;
 		padding: 15px;
 		border: 1px solid #ddd;
 		border-radius: 10px;
@@ -128,61 +257,82 @@
 	text-align: center;
 }
 
+	div.text { width: 180px; 
+		font-size: 0.45em;
+	}
+	
+}
+
+@media screen and (max-width: 480px){
+
+	h2 { 
+		width: 480px; 
+		font-size: 22px;
+		text-align: center;
+		padding: 12px;
+	}
+
+	h3{ 
+		width: 260px; 
+		font-size: 20px;
+		text-align: center;
+
+	}
+	
+	p{ 	
+		width: 240px; 
+		font-size: 20px;
+		text-align: justify;
+		padding: 5px;
+
+	}
+
+	div.block {
+		width: 260px;
+		margin-top: 30px;
+		margin-left: 15px;
+		padding: 15px;
+		border: 1px solid #ddd;
+		border-radius: 10px;
+		float: middle;
+	}
+	div.circle {  
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		color: #69c6a6;
+		line-height: 100px;
+		text-align: center;
+		border-radius: 50%;
+		font-size: 1.1em;
+		text-shadow: 1px 1px 1px #e8f2ef;
+		position: relative;
+
+	}
+
+	div.circle::after{
+		content: '';
+		width: 100px;
+		height: 100px;
+		background: #e8f2ef;
+		display: block;
+		border-radius: 50%;
+		position: absolute;
+		top: -1px;
+		left: -1px;
+		z-index: 1;
+		transition: 0.5s width, 0.5s height, 0.5s top, 0.5s left;
+}
+
+.circle a{
+	font-size: 11px;
+	color: black;
+	text-align: center;
+}
+
 	div.text { width: 150px; 
 		font-size: 0.45em;
 	}
 	
 }
 
-@media screen and (max-width: 1420px){
-	
-	h2{
-	text-align: center;
-	font-size: 45px;
-	letter-spacing: 2px;
-	color: #f3f4ed;
-	margin-top: 60px;
-}
-
-	h3{
-		text-align: center;
-		color: #e2e0e0;
-		font-size: 22px;
-	}
-
-
-	.block{
-		width: 300px;
-		margin-top: 100px;
-		margin-left: 120px;
-		padding: 20px;
-		border: 1px solid #ddd;
-		border-radius: 10px;
-		float: left;
-
-	}
-
-	.circle{
-		background: #d5e8e1;
-		width: 200px;
-		height: 200px;
-		margin: 0 auto;
-		color: #69c6a6;
-		line-height: 200px;
-		text-align: center;
-		border-radius: 50%;
-		font-size: 1.1em;
-		text-shadow: 1px 1px 1px #e8f2ef;
-		position: relative;
-	}
-
-	.circle span{
-		position: relative;
-		z-index: 2;
-	}
-
-	.circle a{
-		color: black;
-		font-size: 22px;
-		text-decoration: none;
-	}

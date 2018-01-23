@@ -76,13 +76,12 @@ h1{
 	background: yellow;
 	padding: 0;
 	text-align: center;
-	font-size: 20px;
 }
 
 
 .number{
-	font-size: 35px;
-	padding: 5 5 11px;	
+	font-size: 25px;
+	padding-top: 25px;
 	font-weight: bold;
 }
 
@@ -270,6 +269,12 @@ footer a{
 		padding: 45px;
 		color: #fff;
 	}
+
+	.number{
+		font-size: 18px;
+		padding: 2 2 8px;
+		font-weight: bold;
+	}
 }
 
 @media screen and (max-width: 845px){
@@ -344,11 +349,11 @@ footer a{
 		float: left;
 		width: 60px;
 		height: 60px;
-		margin: 25px 25px;
+		margin: 20px 20px;
 		background: yellow;
 		padding: 15px 15px;
 		text-align: center;
-		font-size: 8px;
+		font-size: 12px;
 	}
 }
 
