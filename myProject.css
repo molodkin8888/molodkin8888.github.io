@@ -1,101 +1,194 @@
 body{
 	margin: 0;
 	padding: 0;
-	font: 1em/1.4em sans-serif;
-	background: #000;
-	background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-
 }
-
-a{
-	color: #000;
-	text-decoration: none;
-}
-
 h2{
 	text-align: center;
-	font-size: 60px;
-	color: #f3f4ed;
-	margin-top: 60px;
+	padding-top: 45px;
 }
-
-h3{
-	text-align: center;
-	color: #e2e0e0;
-	font-size: 22px;
-}
-
-
-.block{
-	width: 300px;
-	margin-top: 100px;
-	margin-left: 120px;
-	padding: 20px;
-	border: 1px solid #ddd;
-	border-radius: 10px;
-	float: left;
+.container{
+	width: 100%;
+	height: 550px;
+	background: white;
+	display: flex;
+	justify-content: center;
 
 }
 
-.circle{
-	background: #d5e8e1;
-	width: 200px;
-	height: 200px;
-	margin: 0 auto;
-	color: #69c6a6;
-	line-height: 200px;
-	text-align: center;
-	border-radius: 50%;
-	font-size: 1.1em;
-	text-shadow: 1px 1px 1px #e8f2ef;
-	position: relative;
+.information{
+	width: 100%;
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-top: 200px;
 }
 
-.circle span{
-	position: relative;
-	z-index: 2;
-}
-
-.circle a{
-	color: black;
-	font-size: 22px;
-	text-decoration: none;
-}
-
-.circle::after{
-	content: '';
-	width: 200px;
-	height: 200px;
-	background: #77c699;
+.information img{
 	display: block;
-	border-radius: 50%;
-	position: absolute;
-	top: -1px;
-	left: -1px;
-	z-index: 1;
-	transition: 0.5s width, 0.5s height, 0.5s top, 0.5s left;
+	margin: 0 auto;
+	width: 120px;
+	height: 120px;
 }
 
-.circle:hover::after{
-	width: 0;
-	height: 0;
-	left: 100px;
-	top: 100px;
-	box-shadow: 0 0 20px 20px #d8d4d4 inset;
-}
-
-.text{
-	color: #555;
-	font-size: 0.85em;
+.information p{
 	text-align: justify;
+	padding-top: 20px;
+	font-size: 18px;
+	letter-spacing: 1.1px;
+	width: 420px;
+	font-family: 'Verdana', sans-serif;
 }
 
-.text p{
+@media screen and (max-width:1200px){
+.information img{
+	display: block;
+	margin: 0 auto;
+	width: 80px;
+	height: 80px;
+}
+
+.information p{
+	text-align: justify;
+	padding-top: 20px;
+	font-size: 18px;
+	letter-spacing: 1.1px;
+	width: 220px;
+	font-family: 'Verdana', sans-serif;
+}
+}
+
+@media screen and (max-width:880px){
+
+.container{
+	display: block;
+	margin: 0 auto;
+}
+
+.information{
+	width: 60%;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.information img{
+	display: block;
+	margin: 0 auto;
+	width: 180px;
+	height: 180px;
+
+}
+
+.information p{
+	text-align: justify-all;
+	padding-top: 20px;
+	padding-bottom: 40px;
 	font-size: 20px;
-	color: #f7f4f4;
+	letter-spacing: 1.1px;
+	width: 500px;
+	font-family: 'Verdana', sans-serif;
 }
 
+}
 
+@media screen and (max-width:556px){
+
+.container{
+	display: block;
+	margin: 0 auto;
+}
+
+.information{
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+}
+
+.information img{
+	display: block;
+	margin: 0 auto;
+	width: 140px;
+	height: 140px;
+
+}
+
+.information p{
+	text-align: justify;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	font-size: 16px;
+	letter-spacing: 1.1px;
+	width: 400px;
+	font-family: 'Verdana', sans-serif;
+}
+
+}
+
+@media screen and (max-width:435px){
+
+.container{
+	display: block;
+	margin: 0 auto;
+}
+
+.information{
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+}
+
+.information img{
+	display: block;
+	margin: 0 auto;
+	width: 80px;
+	height: 80px;
+
+}
+
+.information p{
+	text-align: justify;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 16px;
+	letter-spacing: 1.1px;
+	width: 260px;
+	font-family: 'Verdana', sans-serif;
+}
+
+}
+
+@media screen and (max-width:298px){
+
+.container{
+	display: block;
+	margin: 0 auto;
+}
+
+.information{
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+}
+
+.information img{
+	display: block;
+	margin: 0 auto;
+	width: 80px;
+	height: 80px;
+
+}
+
+.information p{
+	text-align: justify;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 16px;
+	letter-spacing: 1.1px;
+	width: 200px;
+	font-family: 'Verdana', sans-serif;
+}
+
+}
