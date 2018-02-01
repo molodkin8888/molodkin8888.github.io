@@ -201,10 +201,11 @@ figure.molodkin-effect:hover img{
 }
 
 .about-me p{
-	font-family: Lucida Grande;
-	font-size: 30px;
+	font-family: Helvetica, sans-serif;
+	font-size: 26px;
 	text-align: justify;
 	letter-spacing: 2px;
+	padding: 15px;
 }
 
 .about-me h3{
