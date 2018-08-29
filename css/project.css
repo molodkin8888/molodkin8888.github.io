@@ -1,0 +1,249 @@
+body{
+  	background: #0c0c0c !important;
+	height:4600px;
+}	
+
+.title_project{
+	text-align: center;
+	color: #fff;
+	font-family: 'Work Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 32px;
+	margin-top: 100px;
+
+}
+
+/* foreground (balloons/landscape)*/
+div#parallax-bg-1{
+	position: fixed;
+	width: 1200px;
+	top: 0;
+	left: 50%; 
+	margin-left: -600px; 
+	z-index: 1;
+}
+/* background middle layer*/
+div#parallax-bg-2{
+	position: fixed;
+	width: 1200px;
+	top: 0;
+	left: 50%; 
+	margin-left: -600px; 
+	z-index: 2;
+}
+/* background layer */
+div#parallax-bg-3{
+	position: fixed;
+	width: 960px;
+	top: 0;
+	left: 50%; 
+	margin-left: -470px; 
+	z-index: 3;
+}
+/* foreground */
+div#parallax-bg-3 div{
+	background-repeat:no-repeat;
+	position:absolute;
+	display:block;
+	overflow:hidden;
+}
+div#bg-3-1{
+	    background: url(../image/vue.png);
+     width: 229px;
+    height: 172px;
+    top: 275px;
+    right: 210px;
+}
+div#bg-3-2{
+	background:url('../image/js.png');
+	width: 222px;
+    height: 183px;
+    top: 1050px;
+    right: 261px;
+}
+div#bg-3-3{
+	background:url('../image/sharp.png');
+	    width: 208px;
+    height: 229px;
+    top: 1800px;
+    right: 296px;
+}
+div#bg-3-4{
+	background:url('../image/back.png');
+	width: 200px;
+    height: 279px;
+    top: 2800px;
+    right: 520px;
+}
+/* middle layer clouds */
+div#parallax-bg-2 div{
+	background-repeat:no-repeat;
+	position:absolute;
+	display:block;
+	width:488px;
+	height:138px;
+	overflow:hidden;
+}
+
+div#bg-2-1{
+	top:100px;
+	left:-310px;
+}
+div#bg-2-2{
+	top:270px;
+	right:-70px;
+}
+div#bg-2-3{
+	top:870px;
+	left:-300px;
+}
+div#bg-2-4{
+	top:1120px;
+	right:-130px;
+}
+div#bg-2-5{
+	top:1620px;
+	left:140px;
+}
+div#bg-2-6{
+	top:720px;
+	left:340px;
+}
+
+/*background layer clouds */
+div#parallax-bg-1 div{
+	    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    width: 700px;
+    height: 710px;
+    overflow: hidden;
+}
+div#bg-1-1{
+	background:url('../image/sun.png');
+	top:200px;
+	right:450px;
+}
+div#bg-1-2{
+	background:url('../image/one.png');
+	top:420px;
+	left:0px;
+}
+div#bg-1-3{
+	background:url('../image/two.png');
+	top:850px;
+	right:-290px;
+}
+div#bg-1-4{
+	background:url('../image/down.png');
+	top:1350px;
+	left:200px;
+}
+div#bg-1-5{
+	background:url('../image/two.png');
+	top:1200px;
+	left:-200px;
+}
+
+#go-top {
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    width: 91px;
+    height: 50px;
+    background: #c0c0c0;
+    font-size: 28px;
+    border-radius: 26px;
+    color: white;
+    text-decoration: none;
+    z-index: 100;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-right: 25px;
+    opacity: 0.8;
+    padding-top: 2px;
+}
+
+#go-top:hover {
+    background: #333;
+    opacity: 1;
+}
+
+.title_vue{
+	width: 40em;
+	    margin-top: 139px;
+    margin-left: 78px;
+    font-size: 23px;
+
+    color: #fff;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 3s steps(50, end);
+    animation: type 3s steps(50, end);
+}
+
+.js_title{
+	width: 40em;
+
+	    margin-top: 139px;
+    margin-left: 99px;
+    font-size: 23px;
+    color: #fff;
+     white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 3s steps(50, end);
+    animation: type 3s steps(50, end);
+}
+
+.asp_title {
+	width: 40em;
+
+    margin-top: 189px;
+    margin-left: 40px;
+    font-size: 23px;
+    color: #fff;
+      white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 3s steps(50, end);
+    animation: type 3s steps(50, end);
+}
+
+.games_title{
+	    margin-top: 227px;
+    margin-left: 39px;
+    font-size: 23px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 3s steps(50, end);
+    animation: type 3s steps(50, end);
+}
+
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+
+@media screen and (max-width: 565px){
+	div#bg-3-1{
+		right: 420px;
+	}
+
+	div#bg-3-2{
+		right: 420px;
+	}
+
+	div#bg-3-3 {
+    right: 386px;
+	}
+
+	div#bg-3-4{
+		right: 400px;
+	}
+}
