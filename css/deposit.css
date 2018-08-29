@@ -1,0 +1,137 @@
+header{
+  text-align: center;
+}
+
+form{
+	width: 100%;
+	margin-top:45px; 
+}
+
+td{
+	font-size: 20px;
+	font-family: sans-serif;
+	padding-right: 45px;
+}
+
+input{
+	border-radius: 22px;
+	width: 260px;
+	height: 20px;
+	font-size: 18px;
+	border: 2px solid;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+
+select{
+	  border-radius: 22px;
+      width: 260px;
+	  height: 25px;
+      font-size: 18px;
+      border: 2px solid;
+      margin-bottom: 20px;
+    }
+
+th{
+	font-family: sans-serif;
+	font-size: 22px;
+	padding-right: 45px;
+}
+
+
+.container{
+	width: 100%;
+	border: 1px solid;
+}
+
+#diagram{
+	  margin: 0 auto;
+      text-align: center;
+      padding: 40px;
+    }
+
+#diagram div {
+      margin: auto;
+      width: 80px;
+    }
+
+#firstSum{
+      background: red;
+      width:40px;
+      height:100px;
+  }
+
+ #height-after{
+      background: green;
+      width:40px;
+      height:0; 
+  }
+
+@media screen and (max-width: 600px){
+
+form{
+	width: 100%;
+	margin-top:15px; 
+}
+
+td{
+	font-size: 12px;
+	font-family: sans-serif;
+	padding-right: 15px;
+}
+
+input{
+	border-radius: 22px;
+	width: 160px;
+	height: 15px;
+	font-size: 14px;
+	border: 2px solid;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+
+select{
+	  border-radius: 22px;
+      width: 160px;
+	  height: 25px;
+      font-size: 14px;
+      border: 2px solid;
+      margin-bottom: 10px;
+    }
+
+th{
+	font-family: sans-serif;
+	font-size: 12px;
+	padding-right: 25px;
+}
+
+.container{
+	width: 100%;
+	border: 1px solid;
+}
+
+#diagram{
+	  margin: 0 auto;
+      text-align: center;
+      padding: 40px;
+    }
+
+#diagram div {
+      margin: auto;
+      width: 80px;
+    }
+
+#firstSum{
+      background: red;
+      width:30px;
+      height:80px;
+  }
+
+ #height-after{
+      background: green;
+      width:30px;
+      height:0; 
+  }
+}
