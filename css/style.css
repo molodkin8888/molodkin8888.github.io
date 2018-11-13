@@ -3,8 +3,16 @@ body {
     padding: 0;
 }
 
+.navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    background: #fff;
+}
+
 .navbar {
     background: #000 !important;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar-brand,
@@ -100,6 +108,9 @@ body {
     font-size: 40px;
     padding-top: 50px;
     padding-bottom: 30px;
+    text-align: center;
+    font-size: 55px;
+    text-transform: uppercase;
 }
 
 .our_works {
@@ -269,8 +280,8 @@ body {
     color: #fff;
 }
 
-@media screen and (min-width: 1918px){
-    .desktop-title{
+@media screen and (min-width: 1918px) {
+    .desktop-title {
         font-size: 65px;
     }
 }
@@ -281,7 +292,8 @@ body {
     }
 
     .text_sale_title {
-        font-size: 21px;
+        font-size: 14px;
+        width: 14%;
     }
 
     .dekstop_title {
@@ -291,5 +303,15 @@ body {
     .yellow_btn {
         height: 38px;
         font-size: 14px;
+    }
+
+    .title_our_work {
+        font-size: 30px;
+    }
+
+    .input_sale_block {
+        float: right;
+        width: 63%;
+        border: 1px solid black;
     }
 }
