@@ -1,0 +1,9 @@
+@media screen and (max-width: 920px){
+	.desktop-title{
+		margin-top: 15px;
+	}
+
+	.input_sale_block{
+		width: 50%;
+	}
+}
