@@ -182,9 +182,9 @@ body {
 }
 
 .title_facts_abut_us {
-    margin-top: 50px;
+    margin-top: 150px;
     margin-bottom: 50px;
-    font-size: 32px;
+    font-size: 50px;
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
@@ -207,7 +207,7 @@ body {
 .text_animation_block {
     text-align: center;
     font-size: 24px;
-    margin-bottom: 80px;
+    margin-bottom: 180px;
 }
 
 /*section 7*/
@@ -278,6 +278,46 @@ body {
     border: none;
     height: 40px;
     color: #fff;
+}
+
+
+/*section 7*/
+
+.why_good_work{
+    background: #000;
+        height: auto;
+    background-attachment: scroll;
+    margin-bottom: 50px;
+}
+
+.text_why{
+    font-size: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+.name_why{
+    font-size: 26px;
+    text-align: center;
+    color: #fff;
+}
+
+.descr_why{
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 260px;
+
+}
+
+.why_img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 1918px) {
