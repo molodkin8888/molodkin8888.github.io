@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Work Sans', sans-serif
 }
 
 .navbar-toggler:not(:disabled):not(.disabled) {
@@ -70,6 +71,10 @@ line-height: 20px !important;
     box-shadow: 0 0 40px #c6a521, inset 3px 0.1px 7px rgba(241, 205, 59, 0.35) !important;
 }
 
+.popup{
+    font-weight: 700;
+    font-family: 'Work Sans', sans-serif
+}
 /*2 section*/
 
 .adversting {
@@ -336,7 +341,6 @@ line-height: 20px !important;
     background: #000;
     height: auto;
     background-attachment: scroll;
-    margin-bottom: 50px;
 }
 
 .text_why {
@@ -374,8 +378,6 @@ line-height: 20px !important;
 /*SECTION 8*/
 
 .make_project_different_difficult {
-    margin-top: 100px;
-    margin-bottom: 100px;
     height: auto;
     background: #f2f2f2;
     padding-bottom: 100px;
@@ -479,11 +481,9 @@ line-height: 20px !important;
 /*section client*/
 
 .user_like_us {
-    margin-top: 100px;
     margin-bottom: 100px;
     padding-top: 100px;
     padding-bottom: 100px;
-    background: #f2f2f2;
 }
 
 .block_title_client {
@@ -496,6 +496,10 @@ line-height: 20px !important;
 .block_callbacks_user {
     /* border: 1px solid #dedede;*/
     height: auto;
+}
+
+.title_client_p{
+    font-weight: 700;
 }
 
 .image_user_one {

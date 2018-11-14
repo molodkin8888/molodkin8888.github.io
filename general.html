@@ -20,10 +20,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Услуги <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">О нас</a>
-                <a class="nav-item nav-link" href="#">Портфолио</a>
-                <a class="nav-item nav-link disabled" href="#">Отзывы</a>
+                <a class="nav-item nav-link active" href="#services">Услуги <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#about_us">О нас</a>
+                <a class="nav-item nav-link" href="#portfolio">Портфолио</a>
+                <a class="nav-item nav-link disabled" href="#callbacks">Отзывы</a>
                 <a class="nav-item nav-link disabled" href="#">Контакты</a>
                 <a class="nav-item nav-link disabled" href="#">8(901) 754 40 34</a>
             </div>
@@ -53,11 +53,11 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center mt-4 button_order_design">
-                    <button data-href="#callme" class="popup yellow_btn">Получить дизайн - эскиз бесплатно</button>
+                    <button data-href="#callme" class="popup yellow_btn">Получить дизайн-эскиз в подарок</button>
                 </div>
             </div>
     </section>
-    <section class="our_work">
+    <section class="our_work" id="portfolio">
         <div class="container">
             <p class="d-flex justify-content-center title_our_work">Более 1000 клиентов уже <br> доверились нам</p>
             <div class="row d-flex justify-content-center">
@@ -126,7 +126,7 @@
             </div>
         </div>
     </section>
-    <section class="facts_about_us">
+    <section class="facts_about_us" id="about_us">
         <div class="container">
             <div class="row d-flex justify-content-center w-100">
                 <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10">
@@ -193,32 +193,32 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <img src="https://static.tildacdn.com/tild6366-6462-4236-b166-626231626236/b51.png" class="why_img">
                     <p class="name_why">Сертификация</p>
-                    <p class="descr_why">Вся светодиодная продукция сертифицирована</p>
+                    <p class="descr_why">Вся светодиодная <br> продукция <br> сертифицирована</p>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <img src="https://static.tildacdn.com/tild6338-3237-4263-a463-646630373062/b52.png" class="why_img">
                     <p class="name_why">Надежность</p>
-                    <p class="descr_why">Полное соблюдение
-                        сроков монтажа
+                    <p class="descr_why">Полное соблюдение <br>
+                        сроков монтажа <br>
                         по договору
                     </p>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <img src="https://static.tildacdn.com/tild6334-3466-4264-b339-373663643538/b53.png" class="why_img">
                     <p class="name_why">ПРОФЕССИОНАЛИЗМ</p>
-                    <p class="descr_why">Профессиональные
+                    <p class="descr_why">Профессиональные <br>
 электрики</p>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <img src="https://static.tildacdn.com/tild6439-6463-4833-b261-323335646262/b54.png" class="why_img">
                     <p class="name_why">ГАРАНТИЯ</p>
-                    <p class="descr_why">Гарантия на
+                    <p class="descr_why">Гарантия на <br>
 монтаж и гирлянды</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="make_project_different_difficult">
+    <section class="make_project_different_difficult" id="services">
         <div class="container">
             <div class="title_make_project">
                 <p class="make_project_p">Делаем проекты любого <br> масштаба и сложности</p>
@@ -251,7 +251,7 @@
             </div>
         </div>
     </section>
-    <section class="user_like_us">
+    <section class="user_like_us" id="callbacks">
         <div class="container">
             <div class="block_title_client">
                 <p class="title_client_p">Наши клиенты любят нас</p>
@@ -305,4 +305,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
+
+<script type="text/javascript">
+        $(document).ready(function() {
+                        $(".navbar").on("click", "a", function(event) {
+                            event.preventDefault();
+                            var id = $(this).attr('href'),
+                                top = $(id).offset().top - 120;
+                            $('body,html').animate({ scrollTop: top }, 1100);
+                        });
+                    });
+</script>
 </html>
