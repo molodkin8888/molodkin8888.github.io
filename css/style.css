@@ -361,7 +361,7 @@ line-height: 20px !important;
 
 
 .name_why {
-    font-size: 26px;
+    font-size: 22px;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
@@ -737,7 +737,7 @@ line-height: 20px !important;
     }
 
     .call_now_phone {
-        font-size: 35px;
+        font-size: 33px;
     }
 
     .phone_call_right_now {
@@ -757,7 +757,7 @@ line-height: 20px !important;
 
 @media screen and (max-width: 358px) {
     .call_now_phone {
-        font-size: 30px;
+        font-size: 26px;
     }
 
 }
