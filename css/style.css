@@ -21,8 +21,17 @@ body {
     text-transform: uppercase;
     text-align: center;
     font-weight: 500;
+    font-size: 20px;
 }
 
+.img_header_nav{
+    width: 100px;
+    height: 52px;
+}
+
+.navbar-collapse{
+line-height: 20px !important;
+}
 .first_section {
     background-image: url(../images/firstSection.jpg);
     background-position: center;
@@ -41,6 +50,7 @@ body {
     text-transform: center;
     line-height: 74px;
     margin-top: 30%;
+    text-align: center;
 }
 
 .yellow_btn {
@@ -102,6 +112,10 @@ body {
 
 }
 
+.name_our_work {
+    font-weight: 700;
+}
+
 .title_our_work {
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 600;
@@ -119,8 +133,43 @@ body {
     border: 1px solid #c1c1c1;
 }
 
-.image_our_work {
-    background-image: url(../images/exampleWork.jpg);
+.image_our_work-1 {
+    background-image: url(https://static.tildacdn.com/tild6435-3764-4630-b434-643065346262/kALJ1QTO.jpg);
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.image_our_work-2 {
+    background-image: url(https://static.tildacdn.com/tild3865-3136-4339-a439-643433383963/192883723.JPG);
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.image_our_work-3 {
+    background-image: url(https://static.tildacdn.com/tild6236-3461-4836-a536-666161366230/192883582.JPG);
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.image_our_work-4 {
+    background-image: url(https://static.tildacdn.com/tild3465-3239-4239-a336-356536633662/312567315.JPG);
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.image_our_work-5 {
+    background-image: url(https://static.tildacdn.com/tild6564-3463-4763-b030-613764366334/Outdoor-Icicle-Chris.jpg);
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.image_our_work-6 {
+    background-image: url(https://static.tildacdn.com/tild6233-6366-4966-b662-346239303435/i2-1024x768.jpg);
     height: 200px;
     background-position: center center;
     background-size: cover;

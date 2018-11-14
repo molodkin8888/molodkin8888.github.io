@@ -1,9 +1,18 @@
 @media screen and (max-width: 920px){
 	.desktop-title{
-		margin-top: 55px;
+		margin-top: 65px;
+		line-height: 56px;
 	}
 
 	.input_sale_block{
 		width: 50%;
+	}
+}
+
+@media screen and (max-width: 680px){
+	.desktop-title{
+		margin-top: 85px;
+		font-size: 32px;
+    	line-height: 40px;
 	}
 }
