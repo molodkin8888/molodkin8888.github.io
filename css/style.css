@@ -223,7 +223,7 @@ body {
 
 .text_sale_title {
     float: left;
-    width: 50%;
+    /*width: 50%;*/
     color: #fff;
     font-size: 25px;
     font-weight: 700;
@@ -231,7 +231,6 @@ body {
 
 .input_sale_block {
     float: right;
-    width: 40%;
     border: 1px solid black;
     color:
 }
@@ -369,7 +368,7 @@ body {
 
 .block_callbacks_user {
    /* border: 1px solid #dedede;*/
-    height: 400px;
+    height: auto;
 }
 
 .image_user_one {
@@ -498,14 +497,51 @@ body {
     }
 }
 
+@media screen and (max-width: 748px){
+    .title_facts_abut_us{
+        margin-top: 50px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 705px){
+    .desktop-title{
+        font-size: 42px;
+        text-align: center;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 581px){
+    .image_our_adversting{
+        height: 185px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .descr_image{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        float: left;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .title_input_sale {
         font-size: 14px;
     }
 
+     .desktop-title{
+        font-size: 32px;
+        line-height: 45px;
+        text-align: center;
+        font-weight: 600;
+    }
+
     .text_sale_title {
         font-size: 14px;
-        width: 14%;
+      
     }
 
     .dekstop_title {
@@ -523,7 +559,27 @@ body {
 
     .input_sale_block {
         float: right;
-        width: 63%;
+       /* width: 63%;*/
         border: 1px solid black;
     }
+
+
 }
+
+@media  screen and (max-width: 422px){
+    .call_now_p{
+        font-size: 23px;
+    }
+
+    .call_now_phone{
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 358px){
+    .call_now_phone{
+        font-size: 33px;
+    }
+}
+
+@media scree
