@@ -437,6 +437,61 @@ body {
     float: right;
 }
 
+.call_right_now_section{
+    margin-top: 100px;
+    height: auto;
+    background: #000;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.title_call_right_now{
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.calls_now{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.phone_call_right_now{
+    font-size: 55px;
+    font-weight: 500;
+}
+
+.or_make_order_p{
+    font-size: 28px;
+}
+
+.call_right_now_input_block{
+    color: #fff;
+    padding-bottom: 80px;
+}
+
+.right_now_inp{
+    width: 100%;
+    padding-left: 10px;
+    height: 55px;
+}
+
+.call_me_right_now{
+   width: 100%;
+    padding-left: 10px;
+    height: 58px;
+    border-radius: 25px;
+    background: #ffe100;
+    color: #000;
+    border: none;
+    font-weight: 700;
+}
+
+.label_right_now{
+    float: left;
+    font-size: 20px;
+}
+
 @media screen and (min-width: 1918px) {
     .desktop-title {
         font-size: 65px;
