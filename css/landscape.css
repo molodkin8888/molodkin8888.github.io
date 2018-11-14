@@ -23,3 +23,11 @@
     	line-height: 40px;
 	}
 }
+
+@media screen and (max-width: 485px){
+	.desktop-title{
+		 margin-top: 70px;
+    	 font-size: 32px;
+    	 line-height: 40px;
+	}
+}
