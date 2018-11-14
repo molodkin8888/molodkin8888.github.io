@@ -198,6 +198,7 @@ line-height: 20px !important;
 .call_now_phone {
     font-size: 44px;
     font-weight: 500;
+    color: #fff;
 }
 
 .call_or_delivery {
@@ -224,6 +225,13 @@ line-height: 20px !important;
     border-radius: 25px;
     background-color: #ffe100;
     border: none;
+    font-weight: 700;
+}
+
+.btn_client_us{
+    background: #ffe100;
+    border: none;
+    color: #000;
     font-weight: 700;
 }
 
@@ -633,6 +641,10 @@ line-height: 20px !important;
         margin-top: 50px;
         font-size: 40px;
     }
+
+    .image_our_adversting{
+        height: 185px;
+    }
 }
 
 @media screen and (max-width: 705px) {
@@ -645,7 +657,11 @@ line-height: 20px !important;
 
 @media screen and (max-width: 581px) {
     .image_our_adversting {
-        height: 185px;
+        height: 135px;
+    }
+
+     .text_call_me_block{
+        margin-top: 85px;
     }
 }
 
@@ -668,6 +684,10 @@ line-height: 20px !important;
         line-height: 45px;
         text-align: center;
         font-weight: 600;
+    }
+
+    .phone_call_right_now{
+        font-size: 45px;    
     }
 
     .text_sale_title {
@@ -694,6 +714,10 @@ line-height: 20px !important;
         border: 1px solid black;
     }
 
+    .call_now_phone{
+        font-size: 40px;
+    }
+
 
 }
 
@@ -703,14 +727,29 @@ line-height: 20px !important;
     }
 
     .call_now_phone {
-        font-size: 38px;
+        font-size: 35px;
     }
+
+    .phone_call_right_now {
+    font-size: 40px;
+}
+}
+
+@media screen and (max-width: 378px){
+        .phone_call_right_now {
+    font-size: 32px;
+}
+
+.image_our_adversting{
+    height: 120px;
+}
 }
 
 @media screen and (max-width: 358px) {
     .call_now_phone {
-        font-size: 33px;
+        font-size: 30px;
     }
+
 }
 
 @media scree

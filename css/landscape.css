@@ -9,6 +9,13 @@
 	}
 }
 
+@media screen and (max-width: 880px){
+	.text_call_me_block {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+}
+
 @media screen and (max-width: 680px){
 	.desktop-title{
 		margin-top: 85px;

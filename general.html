@@ -66,7 +66,7 @@
                         <div class="image_our_work-1"></div>
                         <div class="name_our_work pl-2 pr-2 pt-2 pb-2">Дом в деревне Старая Ситня</div>
                         <div class="description_our_work pl-2 pr-2 pt-2 pb-2">Использованы светодиодные дожди и светодиодная бахрома постоянного свечения</div>
-                        <button class="btn btn-primary d-flex justify-content-center w-100">Оформить</button>
+                        <button class="btn btn-primary d-flex justify-content-center w-100 btn_client_us">Оформить</button>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 pt-3 pl-3 pr-3 pb-3 mb-2 mt-3 ml-1 mr-2 our_works">
@@ -75,6 +75,7 @@
                         <div class="name_our_work pl-2 pr-2 pt-2 pb-2">Дом в СНТ Мичуринец</div>
                         <div class="description_our_work pl-2 pr-2 pt-2 pb-2">Использованы светодиодная бахрома и светодиодные гирлянды</div>
                     </div>
+                    <button class="btn btn-primary d-flex justify-content-center w-100 btn_client_us">Оформить</button>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 pt-3 pl-3 pr-3 pb-3 mb-2 mt-3 ml-1 mr-2 our_works">
                     <div class="all_block_our_work">
@@ -82,13 +83,15 @@
                         <div class="name_our_work pl-2 pr-2 pt-2 pb-2">Различные варианты подсветки и украшений</div>
                         <div class="description_our_work pl-2 pr-2 pt-2 pb-2">Использованы различные материалы</div>
                     </div>
+                    <button class="btn btn-primary d-flex justify-content-center w-100 btn_client_us">Оформить</button>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 pt-3 pl-3 pr-3 pb-3 mb-2 mt-3 ml-1 mr-2 our_works">
                     <div class="all_block_our_work">
                         <div class="image_our_work-4"></div>
                         <div class="name_our_work pl-2 pr-2 pt-2 pb-2">Оформление террасы</div>
-                        <div class="description_our_work pl-2 pr-2 pt-2 pb-2">Использована светодиодная нить и светодиодный занавес</div>
+                        <div class="description_our_work pl-2 pr-2 pt-2 pb-2">Использована светодиодная нить и светодиодный <br> занавес</div>
                     </div>
+                    <button class="btn btn-primary d-flex justify-content-center w-100 btn_client_us">Оформить</button>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 pt-3 pl-3 pr-3 pb-3 mb-2 mt-3 ml-1 mr-2 our_works">
                     <div class="all_block_our_work">
@@ -96,13 +99,15 @@
                         <div class="name_our_work pl-2 pr-2 pt-2 pb-2">Дом в поселке Дмитровское</div>
                         <div class="description_our_work pl-2 pr-2 pt-2 pb-2">Использованы светодиодная бахрома, гибкий дюралайт и занавес</div>
                     </div>
+                    <button class="btn btn-primary d-flex justify-content-center w-100 btn_client_us">Оформить</button>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 pt-3 pl-3 pr-3 pb-3 mb-2 mt-3 ml-1 mr-2 our_works">
                     <div class="all_block_our_work">
                         <div class="image_our_work-6"></div>
                         <div class="name_our_work pl-2 pr-2 pt-2 pb-2">Дом в поселке Сосновый Бор</div>
-                        <div class="description_our_work pl-2 pr-2 pt-2 pb-2">Использованы светодиодные дожди и светодиодная бахрома</div>
+                        <div class="description_our_work pl-2 pr-2 pt-2 pb-2">Использованы светодиодные дожди</div>
                     </div>
+                    <button class="btn btn-primary d-flex justify-content-center w-100 btn_client_us">Оформить</button>
                 </div>
             </div>
         </div>
@@ -207,13 +212,13 @@
                     <img src="https://static.tildacdn.com/tild6334-3466-4264-b339-373663643538/b53.png" class="why_img">
                     <p class="name_why">ПРОФЕССИОНАЛИЗМ</p>
                     <p class="descr_why">Профессиональные <br>
-электрики</p>
+                        электрики</p>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <img src="https://static.tildacdn.com/tild6439-6463-4833-b261-323335646262/b54.png" class="why_img">
                     <p class="name_why">ГАРАНТИЯ</p>
                     <p class="descr_why">Гарантия на <br>
-монтаж и гирлянды</p>
+                        монтаж и гирлянды</p>
                 </div>
             </div>
         </div>
@@ -304,16 +309,15 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
-
 <script type="text/javascript">
-        $(document).ready(function() {
-                        $(".navbar").on("click", "a", function(event) {
-                            event.preventDefault();
-                            var id = $(this).attr('href'),
-                                top = $(id).offset().top - 120;
-                            $('body,html').animate({ scrollTop: top }, 1100);
-                        });
-                    });
+$(document).ready(function() {
+    $(".navbar").on("click", "a", function(event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top - 120;
+        $('body,html').animate({ scrollTop: top }, 1100);
+    });
+});
 </script>
+
 </html>
