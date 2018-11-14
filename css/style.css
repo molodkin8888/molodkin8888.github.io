@@ -283,14 +283,14 @@ body {
 
 /*section 7*/
 
-.why_good_work{
+.why_good_work {
     background: #000;
-        height: auto;
+    height: auto;
     background-attachment: scroll;
     margin-bottom: 50px;
 }
 
-.text_why{
+.text_why {
     font-size: 55px;
     text-align: center;
     text-transform: uppercase;
@@ -299,13 +299,13 @@ body {
 }
 
 
-.name_why{
+.name_why {
     font-size: 26px;
     text-align: center;
     color: #fff;
 }
 
-.descr_why{
+.descr_why {
     font-size: 14px;
     text-align: center;
     color: #fff;
@@ -313,11 +313,128 @@ body {
 
 }
 
-.why_img{
+.why_img {
     width: 100px;
     height: 100px;
     display: block;
     margin: 0 auto;
+}
+
+/*SECTION 8*/
+
+.make_project_different_difficult {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: auto;
+    background: #f2f2f2;
+    padding-bottom: 100px;
+}
+
+.make_image_block {
+    border: 1px solid #dedede;
+    height: 240px;
+}
+
+.make_project_p {
+    color: #000;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.image_make {
+    height: 240px;
+    width: 100%;
+}
+
+/*section client*/
+
+.user_like_us {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #f2f2f2;
+}
+
+.block_title_client {
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+}
+
+.block_callbacks_user {
+   /* border: 1px solid #dedede;*/
+    height: 400px;
+}
+
+.image_user_one {
+    display: table-cell;
+    background-image: url(https://static.tildacdn.com/tild6162-6464-4261-b366-326236336334/people_1.png);
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+
+.image_user_two {
+    display: table-cell;
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    background-image: url(https://static.tildacdn.com/tild3834-3362-4632-b837-396337363963/people_7.png);
+}
+
+.image_user_three {
+    display: table-cell;
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    background-image: url(https://static.tildacdn.com/tild3032-3030-4163-b866-363965383339/people_6.png);
+}
+
+.image_user_three {
+    display: table-cell;
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    background-image: url(https://static.tildacdn.com/tild3032-3030-4163-b866-363965383339/people_6.png);
+}
+
+.image_user_fore {
+    display: table-cell;
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    background-image: url(https://static.tildacdn.com/tild6531-3564-4133-b435-383031613737/people_4.png);
+}
+
+.text_comment_user {
+    margin-top: 8px;
+    float: right;
 }
 
 @media screen and (min-width: 1918px) {
