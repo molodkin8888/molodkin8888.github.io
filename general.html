@@ -144,24 +144,24 @@
             </div>
         </div>
         <div class="container">
-            <div class="row w-100 d-flex justify-content-center animation_count">
+            <div class="row w-100 d-flex justify-content-center animation_count" id="counter">
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 pt-2 pl-2 pr-2 pb-2 mb-2 mt-2">
-                    <div class="t-animate t-animate_started number_block_animate" data-animate-style="animatednumber">250</div>
+                    <div class="t-animate t-animate_started number_block_animate" data-num="250" data-animate-style="animatednumber">250</div>
                     <div class="" style=" height: 1px; opacity:0.20;"></div>
                     <div class="t-descr t-descr_sm text_animation_block" style="" field="descr">Километров гирлянд<br>намотано</div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 pt-2 pl-2 pr-2 pb-2 mb-2 mt-2">
-                    <div class="t-animate t-animate_started number_block_animate" data-animate-style="animatednumber">2009</div>
+                    <div class="t-animate t-animate_started number_block_animate" data-num="2009" data-animate-style="animatednumber">2009</div>
                     <div class="" style=" height: 1px; opacity:0.20;"></div>
                     <div class="t-descr t-descr_sm text_animation_block" style="" field="descr">Год рождения<br>нашей компании</div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 pt-2 pl-2 pr-2 pb-2 mb-2 mt-2">
-                    <div class="t-animate t-animate_started number_block_animate" data-animate-style="animatednumber">36</div>
+                    <div class="t-animate t-animate_started number_block_animate" data-num="36" data-animate-style="animatednumber">36</div>
                     <div class="" style=" height: 1px; opacity:0.20;"></div>
                     <div class="t-descr t-descr_sm text_animation_block" style="" field="descr">Месяцев гарантии</div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 pt-2 pl-2 pr-2 pb-2 mb-2 mt-2">
-                    <div class="t-animate t-animate_started number_block_animate" data-animate-style="animatednumber">4</div>
+                    <div class="t-animate t-animate_started number_block_animate" data-num="4" data-animate-style="animatednumber">4</div>
                     <div class="" style=" height: 1px; opacity:0.20;"></div>
                     <div class="t-descr t-descr_sm text_animation_block" style="" field="descr">Часа от заявки до <br>выезда специалиста</div>
                 </div>
@@ -343,6 +343,42 @@ $(document).ready(function() {
         $('body,html').animate({ scrollTop: top }, 1100);
     });
 });
+
+
+
+var time = 2, cc = 1;
+$(window).scroll(function(){
+$('#counter').each(function(){
+
+    var 
+    cPos = $(this).offset().top,
+    topWindow = $(window).scrollTop();
+    if(cPos < topWindow + 900)
+        if(cc < 2){
+
+
+        $('div').each(function(){
+         var i = 1,
+    num = $(this).data('num'),
+    step = 1000 * time / num,
+    that = $(this),
+    int = setInterval(function(){
+      if (i <= num) {
+        that.html(i);
+      }
+      else {
+        cc = cc+2;
+        clearInterval(int);
+      }
+      i++;
+    },step); 
+        })
+    }
+  });
+
+});
+
+
 </script>
 
 </html>
