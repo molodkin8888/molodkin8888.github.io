@@ -26,7 +26,7 @@ MAILER_PORT = 465
 SOURCE_MAIL = 'testsendsemail@gmail.com'
 PASSWORD = '8041488test'
 
-TARGET_EMAILS = ['www.globaltrouble@gmail.com', ]
+TARGET_EMAILS = ['www.zhenya.molodkin@gmail.com', ]
 SUBJECT = 'Form submit notification'
 # ==================== END DEFAULTS ===================== #
 log = logging.getLogger()
