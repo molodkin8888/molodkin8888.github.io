@@ -20,14 +20,14 @@ $(document).on('click', '#modal_btn', function(){
                 	contentType: "application/json",
                 	data: JSON.stringify(data),
                 	success:function createList(data){
-						$('#modal_name').val('');
-						$('#phone_modal').val('');
-                	},
+			$('#modal_name').val('');
+			$('#phone_modal').val('');
+                	    },
                 	error: function(){
                         $('#exampleModalCenter').modal('hide');
                         $('#errorModal').modal('show');
-                		$('#modal_name').val('');
-						$('#phone_modal').val('');
+                	$('#modal_name').val('');
+			$('#phone_modal').val('');
                 	}
                 })
 });
