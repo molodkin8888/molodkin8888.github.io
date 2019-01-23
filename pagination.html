@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pagination</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/pagination.css">
+<title>Pagination</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/pagination.css">
 </head>
 <body>
-	
-<div id="applicationPagination">
-		<section class="section">
-			<div class="picture_unit pict" v-for="photo in photos">
-				<div class="picture">
-					<img :src="photo.urls.small" alt="">
-				</div>
-					<div class="picture_footer info">
-						<img :src="photo.user.profile_image.small" alt="" class="photo_people">			
-							<div class="people_info">
-								<a :href="photo.user.portfolio_url" target="_blank">{{ photo.user.name }}</a>
-							</div>
-					</div>
-			</div>
-		</section>
 
-		<pagination
-			:current="currentPage"
-			:total="totalPhotos"
-			:per_page="countPhoto"
-			@page-changed="changeView">
-		</pagination>
+<div id="applicationPagination">
+<section class="section">
+ 	<div class="picture_unit pict" v-for="photo in photos">
+		<div class="picture">
+			<img :src="photo.urls.small" alt="">
+		</div>
+		<div class="picture_footer info">
+		<img :src="photo.user.profile_image.small" alt="" class="photo_people">			
+				<div class="people_info">
+					<a :href="photo.user.portfolio_url" target="_blank">{{ photo.user.name }}</a>
+				</div>
+			</div>
+	</div>
+</section>
+
+<pagination
+	:current="currentPage"
+	:total="totalPhotos"
+	:per_page="countPhoto"
+	@page-changed="changeView">
+</pagination>
 </div>
 
-	<template id="paginationTemplate">
-		<div class="pagination">
-			<div class="pagin-left">
-				<a href="#" v-if="Prev()" @click.prevent="changePage(previousPage)">Previous</a>
-			</div>
-				<div class="pagin-middle">
-					<ul>
-						<li v-if="First()"><a href="#" @click.prevent="changePage(1)">1</a></li>
-						<li v-for="page in pages">
-							<a href="#"@click.prevent="changePage(page)" :class="{ current: current == page }">{{ page }}</a>
-						</li>
-							<li v-if="Last()"><a href="#" @click.prevent="changePage(totalPages)">{{ totalPages }}</a></li>
-					</ul>
-				</div>
-			<div class="pagin-right">
-				<a href="#" v-if="Next()" @click.prevent="changePage(nextPage)">Next</a>
-			</div>
-		</div>
-	</template>
+<template id="paginationTemplate">
+<div class="pagination">
+<div class="pagin-left">
+	<a href="#" v-if="Prev()" @click.prevent="changePage(previousPage)">Previous</a>
+</div>
+	<div class="pagin-middle">
+		<ul>
+			<li v-if="First()"><a href="#" @click.prevent="changePage(1)">1</a></li>
+			<li v-for="page in pages">
+			      <a href="#"@click.prevent="changePage(page)" :class="{ current: current == page }">{{ page }}</a>
+			</li>
+			<li v-if="Last()"><a href="#" @click.prevent="changePage(totalPages)">{{ totalPages }}</a></li>
+		</ul>
+	</div>
+	<div class="pagin-right">
+		<a href="#" v-if="Next()" @click.prevent="changePage(nextPage)">Next</a>
+	</div>
+</div>
+</template>
 
 
-	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-	<script src="https://cdn.jsdelivr.net/vue.resource/1.0.3/vue-resource.min.js"></script>
-	<script src="js/pagination.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script src="https://cdn.jsdelivr.net/vue.resource/1.0.3/vue-resource.min.js"></script>
+<script src="js/pagination.js"></script>
 </body>
 </html>
 
